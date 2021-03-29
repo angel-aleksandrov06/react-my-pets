@@ -1,14 +1,16 @@
+import { Link } from 'react-router-dom';
+
 import './Header.css';
 
-function Header() {
+const Header = () => {
     return (
         <header id="site-header">
             <nav className="navbar">
                 <section className="navbar-dashboard">
                     <div className="first-bar">
-                        <a href="#">Dashboard</a>
-                        <a className="button" href="#">My Pets</a>
-                        <a className="button" href="#">Add Pet</a>
+                        <Link to="/">Dashboard</Link>
+                        <Link className="button" to="#">My Pets</Link>
+                        <Link className="button" to="/pets/create">Add Pet</Link>
                     </div>
                     <div className="second-bar">
                         <ul>
